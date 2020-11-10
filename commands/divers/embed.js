@@ -1,4 +1,5 @@
 const { Command } = require('discord.js-commando');
+const Discord = require('discord.js');
 
 module.exports = class EmbedCommand extends Command {
     constructor(client) {
@@ -17,8 +18,6 @@ module.exports = class EmbedCommand extends Command {
     }
 
     async run(msg) {
-        const Discord = require('discord.js');
-
         const embed = new Discord.MessageEmbed(); // création de l'embed
 
         embed
